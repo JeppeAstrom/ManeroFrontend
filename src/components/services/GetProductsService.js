@@ -1,6 +1,6 @@
 const getProductService = async () => {
   try {
-    const response = await fetch('https://manero-backend-group-3.azurewebsites.net/v1/api/products', {
+    const response = await fetch('https://localhost:7164/v1/api/products', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ const getProductService = async () => {
 
 const getSingleProductService = async ({id}) => {
   try {
-    const response = await fetch(`https://manero-backend-group-3.azurewebsites.net/v1/api/Product/id/${id}`);
+    const response = await fetch(`https://localhost:7164/v1/api/Product/id/${id}`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -29,7 +29,7 @@ const getSingleProductService = async ({id}) => {
 
 const getSearchProductService = async ({searchCondition}) => {
   try {
-    const response = await fetch(`https://manero-backend-group-3.azurewebsites.net/v1/api/Product/search/${searchCondition}`);
+    const response = await fetch(`https://localhost:7164/v1/api/Product/search/${searchCondition}`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -44,7 +44,7 @@ const favoriteItemService = async ({id}) => {
   };
 
   try {
-    const response = await fetch("https://manero-backend-group-3.azurewebsites.net/v1/api/Wish", {
+    const response = await fetch("https://localhost:7164/v1/api/Wish", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ const unfavoriteItemService = async ({id}) => {
   };
 
   try {
-    const response = await fetch("https://manero-backend-group-3.azurewebsites.net/v1/api/Wish", {
+    const response = await fetch("https://localhost:7164/v1/api/Wish", {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ const unfavoriteItemService = async ({id}) => {
 
 const getFavoriteItemsService = async () => {
   try {
-    const response = await fetch('https://manero-backend-group-3.azurewebsites.net/v1/api/Wishes', {
+    const response = await fetch('https://localhost:7164/v1/api/Wishes', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

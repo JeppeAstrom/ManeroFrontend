@@ -2,7 +2,7 @@
 
 export const getAllOrdersService = async () => {
 
-    const result = await fetch("https://manero-backend-group-3.azurewebsites.net/v1/api/Order/history", {
+    const result = await fetch("https://localhost:7164/v1/api/Order/history", {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export const getAllOrdersService = async () => {
 
 
 export const getStatusService = async (id) => {
-    const result = await fetch(`https://manero-backend-group-3.azurewebsites.net/v1/api/Order/status/${id}`, {
+    const result = await fetch(`https://localhost:7164/v1/api/Order/status/${id}`, {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json',

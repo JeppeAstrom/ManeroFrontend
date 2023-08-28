@@ -4,7 +4,7 @@ import { AddressContext } from '../../../contexts/AddressProvider';
 import { useNavigate } from 'react-router-dom';
 
 const Address = () => {
-  const { addressData, getAddress } = useContext(AddressContext);
+  const { addressData, getAddress } = useContext(AddressContext); // Use context from AddressContext
   const navigate = useNavigate();
 
   const handleAddAddress = () => {
@@ -16,8 +16,8 @@ const Address = () => {
   };
 
   useEffect(() => {
-    getAddress(); // Fetch the address data on component mount and whenever there's a change in addressData
-  }, [getAddress, addressData]);
+    getAddress(); // Use the getAddress function from the context
+  }, []);
 
   return (
     <div className="flex justify-center mx-4">

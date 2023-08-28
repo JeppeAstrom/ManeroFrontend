@@ -39,7 +39,8 @@ const Featured = () => {
         <h2 className="font-bold">Featured</h2>
         <Link to={`/tag/${tag}`}>view all&gt;</Link>
       </div>
-      <ul className="flex gap-6">
+      {}
+      <ul className="flex gap-6 justify-center">
         {limitedProducts.map((product) => (
           <li key={product.id}>
             <ProductItem product={product} />

@@ -1,6 +1,6 @@
-const loginUrl = 'https://manero-backend-group-3.azurewebsites.net/v1/api/Auth/Login';
-const registerUrl = 'https://manero-backend-group-3.azurewebsites.net/v1/api/Auth/Register';
-const authUrl = 'https://manero-backend-group-3.azurewebsites.net/v1/api/Auth/validatetoken';
+const loginUrl = 'https://localhost:7164/v1/api/Auth/Login';
+const registerUrl = 'https://localhost:7164/v1/api/Auth/Register';
+const authUrl = 'https://localhost:7164/v1/api/Auth/validatetoken';
 //const apiKey = "";
 
 export const handleRegisterService = async (firstName, lastName, email, password) => {

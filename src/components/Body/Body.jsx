@@ -18,7 +18,7 @@ import ReviewsAll from "./views/ReviewsAll";
 import OrderHistory from "./views/OrderHistory";
 import PromoCodes from "./views/PromoCodes";
 import MyAddress from "./views/MyAddress";
-
+import Payment from "./views/Payment";
 const Body = () => {
   return (
     <main>
@@ -43,6 +43,7 @@ const Body = () => {
         <Route path="/order-history" element={<OrderHistory />} />
         <Route path="/my-promocodes" element={<PromoCodes />} />
         <Route path="/add-address" element={<MyAddress />} />
+        <Route path="/payment-method" element={<Payment/>} />
       </Routes>
     </main>
   );

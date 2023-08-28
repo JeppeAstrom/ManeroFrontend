@@ -1,6 +1,6 @@
 const ReviewService = async (id) => {
     try {
-      const response = await fetch(`https://manero-backend-group-3.azurewebsites.net/v1/api/Product/id/${id}`);
+      const response = await fetch(`https://localhost:7164/v1/api/Product/id/${id}`);
       const data = await response.json();
       return data.reviews;
     } catch (error) {
@@ -13,7 +13,7 @@ const ReviewService = async (id) => {
 
     console.log(review);
     try {
-      const response = await fetch(`https://manero-backend-group-3.azurewebsites.net/v1/api/Review`, {
+      const response = await fetch(`https://localhost:7164/v1/api/Review`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

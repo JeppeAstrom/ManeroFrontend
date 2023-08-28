@@ -8,7 +8,7 @@ import { ReviewProvider } from './contexts/ReviewProvider';
 import { ProfileProvider } from './contexts/ProfileProvider';
 import { AddressProvider } from './contexts/AddressProvider';
 import { OrderProvider } from './contexts/OrderProvider';
-
+import { PaymentsProvider } from './contexts/PaymentsProvider';
 
 function App() {
   const [hasVisitedBefore, setHasVisitedBefore] = useState(false);
@@ -47,9 +47,10 @@ function App() {
         <ReviewProvider>
           <AddressProvider>
           <ProfileProvider>
+            <PaymentsProvider/>
             <Header />
             <Body />
-           
+            <PaymentsProvider/>
           </ProfileProvider>
           </AddressProvider>
         </ReviewProvider>

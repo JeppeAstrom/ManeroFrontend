@@ -34,8 +34,8 @@ const MyAddress = () => {
 
   return (
     <div className='flex justify-center items-center h-screen'>
-      <div className='max-w-lg w-full bg-white rounded-lg shadow-lg p-8 mt-40'>
-        <div className='text-md text-center mt-32'>
+      <div className='max-w-lg w-full bg-white rounded-lg shadow-lg p-8'>
+        <div className='text-md text-center mt-28'>
           <button
             className='absolute h-8 w-8 flex items-center justify-center rounded-full'
             onClick={() => navigate('/account')}
@@ -123,7 +123,7 @@ const MyAddress = () => {
           />
 
           <button
-            className='bg-black hover:bg-blue-600 text-white w-full py-2 rounded-3xl mt-20'
+            className='bg-black hover:bg-blue-600 text-white w-full py-2 rounded-3xl mt-5 mb-14'
             type='submit'>
             
             Add Address

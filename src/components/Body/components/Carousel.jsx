@@ -22,7 +22,7 @@ const Carousel = () => {
   return (
     <div>
       <div className="flex justify-center items-center mt-5">
-        <div className="relative w-80 h-80">
+      <div className="relative w-96 h-96">
           {slides.map((slide, index) => (
             <img
               key={slide.id}
@@ -37,7 +37,7 @@ const Carousel = () => {
         <div className="flex justify-center mt-2">
         </div>
       </div>
-      <div className="flex justify-center mt-2">
+      <div className="flex justify-center mt-10">
         {slides.map((slide, index) => (
           <button
             key={slide.id}
